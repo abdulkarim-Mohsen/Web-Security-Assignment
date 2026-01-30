@@ -1,6 +1,5 @@
 <?php
 session_start();
-// التحقق من أن المستخدم مسجل دخول، وإلا يتم طرده لصفحة الدخول
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
@@ -68,5 +67,6 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 
 </body>
+
 
 </html>
